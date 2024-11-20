@@ -1,0 +1,63 @@
+\begin{tikzpicture}
+  \pgfplotstableread{
+    Semester  VeryLow    Low        Neutral     High       VeryHigh
+    Q1        0          0          3.12        25.00      71.88
+    Q2        0          15.62      10.94       26.56      46.88
+  }\frequency
+
+  \begin{axis}[
+    scale only axis,
+    name=ax1,
+    legend cell align=center,
+    legend style={at={(2.75,1.25)},anchor=north,draw=none},
+    xbar stacked,
+    xmin=-100,
+    xmax=0,
+    try min ticks=3,
+    xticklabel style = {font=\scriptsize},
+    xticklabel=\pgfmathparse{abs(\tick)}\pgfmathprintnumber{\pgfmathresult}\,$\%$,
+    ytick=data,
+    yticklabel style={align=center},
+    yticklabels={
+      English,
+      Mother Tongue, 
+    },
+    enlarge y limits={abs=0.45cm},
+    width=65px,
+    height=40px
+    ]
+    \addlegendimage{area legend, fill=bad, postaction={pattern=crosshatch, pattern color=black}}
+    \addlegendimage{area legend, fill=notgood, postaction={pattern=grid, pattern color=black}}
+    \addlegendimage{area legend, fill=gray, postaction={pattern=north east lines, pattern color=black}}
+    \addlegendimage{area legend, fill=okay, postaction={pattern=dots, pattern color=black}}
+    \addlegendimage{area legend, fill=good, postaction={pattern=horizontal lines, pattern color=black}}
+    \addplot [fill=gray, postaction={pattern=north east lines, pattern color=black}] table [x expr=-(\thisrow{Neutral}/2), meta=Semester ,y expr=\coordindex] {\frequency};
+    \addplot [fill=notgood, postaction={pattern=grid, pattern color=black}] table [x expr=-\thisrow{Low}, meta=Semester ,y expr=\coordindex] {\frequency};
+    \addplot [fill=bad, postaction={pattern=crosshatch, pattern color=black}] table [x expr=-\thisrow{VeryLow}, meta=Semester, y expr=\coordindex] {\frequency};
+    \addlegendentry{Very Low}
+    \addlegendentry{Low}
+    \addlegendentry{Neutral} 
+    \addlegendentry{High}
+    \addlegendentry{Very High}
+  \end{axis}
+
+  \begin{axis}[
+    scale only axis,
+    at=(ax1.south east),
+    xbar stacked,
+    xmin=0,
+    xmax=100,
+    xticklabel style = {font=\scriptsize},
+    try min ticks=3,
+    xticklabel=\pgfmathparse{abs(\tick)}\pgfmathprintnumber{\pgfmathresult}\,$\%$,
+    ytick=data,
+    yticklabels={},
+    enlarge y limits={abs=0.45cm},
+    width=65px,
+    height=40px
+    ]
+    \addplot [fill=gray, postaction={pattern=north east lines, pattern color=black}] table [x expr=(\thisrow{Neutral}/2), meta=Semester ,y expr=\coordindex] {\frequency};
+    \addplot [fill=okay, postaction={pattern=dots, pattern color=black}] table [x=High, meta=Semester ,y expr=\coordindex] {\frequency};
+    \addplot [fill=good, postaction={pattern=horizontal lines, pattern color=black}] table [x=VeryHigh, meta=Semester ,y expr=\coordindex] {\frequency};
+  \end{axis}
+\end{tikzpicture}
