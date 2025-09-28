@@ -17,6 +17,10 @@
 \usepackage{tcolorbox}
 \usepackage{verbatim}
 \usepackage{quoting}
+%\usepackage{fontspec}
+\usepackage{tabularx}
+
+%\newfontfamily\dn{Noto Sans Devanagari}[Script=Devanagari] % Use any Devanagari font on your system
 
 
 \pgfplotsset{compat=1.18}
@@ -26,6 +30,10 @@
 \definecolor{okay}{rgb}{0.190631, 0.407061, 0.556089}   % Blue-green
 \definecolor{notgood}{rgb}{0.368627, 0.788888, 0.482758} % Yellow-green
 \definecolor{bad}{rgb}{0.993248, 0.906157, 0.143936}    % Yellow
+
+\definecolor{steelblue}{RGB}{70, 130, 180}
+\definecolor{lightsteelblue}{RGB}{176, 196, 222}
+\definecolor{palesteelblue}{RGB}{230, 238, 248}
 
 \AtBeginDocument{%
   \providecommand\BibTeX{{%
@@ -40,7 +48,7 @@
 
 \begin{document}
 
-\title[]{}
+\title[]{A phenomenographical study of instructor perceptions and practices in multilingual computing classrooms in India}
 
 
 %%
@@ -165,7 +173,7 @@
 
 
 \bibliographystyle{ACM-Reference-Format}
-\balance
+%\balance
 \bibliography{refs}
 
 

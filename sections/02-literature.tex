@@ -1,6 +1,191 @@
+\begin{table*}[ht]
+\centering
+\renewcommand{\arraystretch}{1.8}
+\begin{tabularx}{\textwidth}{>{\bfseries\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X} 
+  \hline
+\rowcolor{steelblue}
+\textcolor{white}{NEP Edition} & \textcolor{white}{\textbf{1968}~\cite{NEP1968}} &
+\textcolor{white}{\textbf{1986}~\cite{NEP1986}} &
+\textcolor{white}{\textbf{2020}~\cite{NEP2020}} \\ \hline
+\rowcolor{palesteelblue}
+Hindi-Speaking States & Hindi, English, and a modern Indian language (preferably from Southern India) & Hindi, English, and a modern Indian language (preferably from Southern India) & Three languages of the student's or state's choice (at least two must be native to India) \\
+\rowcolor{white}
+Non-Hindi Speaking States & Regional language, Hindi, and English & Regional language, Hindi, and English & Three languages of the student's or state's choice (at least two must be native to India) \\
+\rowcolor{palesteelblue}
+Key Change & First formal introduction of the formula to promote national
+integration & Reiterated the 1968 formula without changes & Introduced
+flexibility, allowing students to choose the languages, with the condition that
+two of the three languages must be Indian \\ \hline
+\end{tabularx}
+\vspace{0.5em}
+\caption{Evolution of the Three-Language Formula in National Education Policies}
+\label{tab:three-language-formula}
+\end{table*}
+
+To situate the work presented in this paper, we provide an overview of four
+relevant sources of literature. First, in
+Section~\ref{subsec:indian-higher-education}, we provide a broad overview of the
+Indian higher education system with a particular focus on the role that
+multilingualism plays in shaping policy and practice. Next, in
+Section~\ref{subsec:theories-of-translanguaging},
+
+\subsection{Indian Higher Education \& Language}~\label{subsec:indian-higher-education}
+
+Here, we provide a broad overview of Indian higher education both from the
+perspectives of policy and practice. In
+Sections~\ref{subsubsec:multilingualism-in-indian-education} and
+\ref{subsubsec:language-and-education-policy}, we discuss the multilingual
+nature of India and Indian education, respectively. We follow this with an
+overview of emperical work on language and Indian higher education in
+Section~\ref{subsubsec:emperical-work}.
+
+\subsubsection{Multilingual Landscape}\label{subsubsec:multilingualism-in-indian-education}
+
+% Indian lnguistic landscape
+The linguistic landscape of India is incredibly diverse, to such an extent that
+it can be difficult to exaclty quantify the number of languages spoken in the
+country. India has 22 scheduled languages---meaning they are officially
+recognized by the government and have a special status in the constitution---and 
+many hundreds of other languages and dialects that are spkoken arcoss its 28
+states and 8 union territories~\cite{2011census}.
 
 
-\subsection{Indic LLMs and Datasets}
+\subsubsection{Language and Education
+Policy}\label{subsubsec:language-and-education-policy}
 
-\citet{ramesh2022samanantar} introduced Samanantar, a large-scale multilingual
-dataset for Indic languages containing sentence pairs in 11 languages. 
+% NEP and the three language policty
+India's National Education Policy (NEP) of 2020~\cite{NEP2020} emphasizes the importance of
+of equity and the centrality of language in achieving equitable education.
+\begin{quote}
+  ``\textit{The aim must be for India to have an education system by 2040 that
+  is second to none, with equitable access ot the highest quality educaiton for
+  all learners regardless of social or ecenomic background}''(p. 3)
+\end{quote}
+In previous editions of the NEP, which took places in 1968 and 1980, the
+three-language formula has been a key policy in Indian education system---though
+it has undergone considerable evolution in it's most recent iteration
+(Table~\cite{tab:three-language-formula }). This policy mandates that students
+learn three languages where the specific languages differed based primarily on
+whether a student lived in a Hindi or non-Hindi speaking state. The 2020 edition
+of the NEP, though continuin to emphasize the importance of learning three
+languages introuces greater flexibility in which languages fit into each
+category and leaves it to the state or region to make these policy decision.
+
+\subsubsection{Emperical Work}\label{subsubsec:emperical-work}
+
+
+\subsection{Language and Computing Education}
+
+% The rise of natural language programming
+Programming, once the domain of structured syntax and rigid semantics, is
+increasingly shifting towards natural language interfaces for program
+specification~\cite{lau2023ban, prather2025beyond, chen2025empirical,
+petrovska2024incorporating}---courtesy of the advanced program synthesis
+capabilities of large language models~\cite{austin2021program, jimenezswe}. The
+prevelance of English venacular in programming language keywords and
+documentation has long been a barrier to entry for non-English
+speakers~\cite{guo2018non}. However, the shift towards natural language
+prompts---brought about courtesy of multilingual GenAI models, presents both
+new opportunities as well as new challenges for non-English speakers. Below, we
+highlight some of the key challenges non-English speaking novice programers
+have faced historically as well as some of the opprotunities that may arise as
+programming moves towards natural language interfaces.
+
+\subsubsection{Potential Challenges for non-English Speakers}
+
+
+
+% Role of Syntax and Language
+As noted, by \citet{guo2018non}, the vast majority of programming
+languages---and almost centainly all widely adopted programming
+languages---rely on English keywords. \citet{stefik2013emperical} compared
+error rates by novice programmers among a variety of programming languages
+(i.e., Quorum, Python, Java, C, Pearl) to that of a language that used random
+keywords (i.e., Randomo). They found that languages that used syntax that more
+naturally resembled natural language (i.e., Quorum and Python) had lower error
+rates and that students had similar error rates for Randomo and languages like
+Java. This not only highlights the role that syntax plays but, as hypothesized
+by \citet{becker2019parlez}, that non-English speakers may not be able
+to share in the affordances of languages such as Quorum and Python. This
+hypothesis was, in part, confirmed by the work of \citet{dasgupta2017learning}
+which found that Scratch users coding in their localized native language
+demonstrate new programming concepts at a faster rate than users from the same
+countries using English interfaces, controlling for activity levels and
+socialization. 
+
+
+As noted---somewhat profetically in retreospect given it was published before
+widely availbe GenAI models---by \citet{becker2019parlez} as programming
+language design moves away from random keywords, to keywords that invoke
+natural language, towards fully natural language interface, the difficulty gap
+in aquiring that language will become steadily larger and favor the user who is
+already familiar with the natural language which the interface is based on. 
+\begin{quote}
+   ''However, imagine if perfect natural (English) language programming was
+   achievable today.''
+\end{quote}
+Imagine indeed. However, we are fortunate in that large language models are
+trained on a wide variety of languages, suggesting that interfacing with these
+models in non-English languages may be possible and thus lower the barrier to 
+entry for non-English speakers.
+
+
+\subsubsection{Opportunities for non-English Speakers}
+
+Perhaps the immediate, and most obvious, opportunity is the ability to interact
+with programming environments in one's native language~\cite{smith2024explain,
+li2024bridging, raihan2024mhumaneval, prather2025breaking}.
+As noted by 
+
+
+
+\subsubsection{India Specific Opportunities and Challenges}
+
+\citet{bhattacharyya2019indic} characterized a wide variety of challenges relating
+to Indic languages and computing. These included, 
+\begin{enumerate} 
+  \item \textbf{Scale and Diversity}
+  Indic languages encompass a vast array of languages and dialects, belonging to multiple linguistic families and written in numerous distinct scripts.
+  \item \textbf{Longer Utterances}
+    Sentences in Indic languages are often longer and more complex than in English, complicating tasks like parsing and speech recognition.
+  \item \textbf{Code Mixing}
+    The frequent mixing of multiple languages in a single sentence or conversation is a common challenge in computational linguistics for the region.
+  \item \textbf{Resource Scarcity}
+    Many Indic languages lack sufficient annotated datasets for building robust NLP and speech tools.
+  %\item \textbf{Absence of basic speech and NLP tools}
+  %  Foundational tools like morphology analyzers and speech recognition systems are either unavailable or lack accuracy for most Indic languages.
+  \item \textbf{Absence of linguistics knowledge}
+    A limited understanding of the linguistic structure of many regional languages hinders the development of computational models.
+  \item \textbf{Script complexity and non-standard input mechanisms}
+    The diversity of scripts and their associated vowel and consonant combinations make input systems slower and less intuitive.
+  \item \textbf{Non-standard transliteration}
+    Roman transliteration of Indic languages lacks standardization, leading to multiple ways of representing the same word.
+  %\item \textbf{Non-standard storage}
+  %  Variations in how characters are encoded and stored pose issues in data sharing and tool interoperability.
+  %\item \textbf{Man-made Problems}
+  %  Government-imposed standard keyboards and inadequate funding often stifle innovation and efficiency in linguistic computing.
+  %\item \textbf{Some challenging language phenomena}
+  %  Features like free word order, agglutination, and context-dependent pronunciation introduce additional computational hurdles.
+\end{enumerate}
+Though issues such as \textit{}
+
+\citet{} found that 
+\citet{smith2024explain} had similar findings with Tamil translations of
+correct English descriptions of code having far less success than 10 other of
+hte most commonly spoken languages in India
+
+
+
+\subsection{Pedagogy and Linguistic Diversity}
+
+\subsubsection{Theories of Translanguaging}
+
+% Definitions, terms, etc
+
+% Theories of translanguaging
+
+% Translanguaging work in india
+
+
+
+
