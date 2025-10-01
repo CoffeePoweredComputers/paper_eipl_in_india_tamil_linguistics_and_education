@@ -1,6 +1,106 @@
+India is a linguistically pluralistic country boasting 22-scheduled languages in
+which official conf
+
+\subsection{Natural Language Programming}
+
+The notion that programs might be generated from natural language is not a new
+one~\cite{sammet_use_1966, halpern_foundations_1966} and is one that, prior to
+LLMs, had received only limited research and even more limited success in terms
+of achieving widespread use due to the complexity of transforming natural
+language into executable code~\cite{miller_natural_1981, mihalcea_nlp_2006,
+lieberman_feasibility_2006}. Though desirable in theory it comes fraught with
+complications. As noted by \citet{bauer_foolishness_1979} in 1979,
+\begin{quote}
+    ``When all is said and told, the 'naturalness' with which we use our native
+    tongues boils down to the ease with which we can use them for making
+    statements the nonsense of which is not obvious.''
+\end{quote}
+This critique captures his broader point that natural language, by very
+definition, abandon the \textit{formalized} balance between expressiveness and
+precision that modern, high-level programming languages have achieved. However,
+with the advent of modern LLMs the dream (or nightmare) of ``natural language
+programming'' is at hand. Certainly, many of the comments on the desirability of
+such a programming approach made by \citet{sammet_use_1966}--namely expanding
+the base of efficiency of developers and the quantity of people who can do
+programming--are echoed in the modern justifications for enabling
+developers~\cite{zhang_practices_2023} and
+students~\cite{vadaparty_cs1-llm_2024} to engage in human-GenAI collaborative
+coding. With that said, comments made by a participant, Morton, in
+\citet{sammet_use_1966} echo the sentiments of \citet{bauer_foolishness_1979}
+\begin{quote}
+    ``Computers don't ask `what do you mean by that?' as freely as humans do;
+    they usually make some arbitrary interpretation of what you meant, and
+    continue their business by doing the wrong thing.''
+\end{quote}
+Though LLM based coding assistants may seek to provide guardrails to reduce the
+probability of error, much in the same way other modern development tools do, it
+is still upon the individual who formed the query to evaluate the results. As
+such, the challenge for educators preparing students for this new environments
+is to enable them with the tools needed to effectively \textit{prompt} GenAI
+models and \textit{evaluate} their results.
+
+\subsection{Prompting and Code Comprehension in Introductory Programming}
+
+% Basics on the skills we seek to develop and why
+
+% EiPE/EiPL question 
+
+% Prompt Problems
+
+% Other approaches to guardrailing prompting
 
 
 \subsection{Indic LLMs and Datasets}
 
-\citet{ramesh2022samanantar} introduced Samanantar, a large-scale multilingual
+\citet{ramesh_samanantar_2022} introduced Samanantar, a large-scale multilingual
 dataset for Indic languages containing sentence pairs in 11 languages. 
+
+
+\subsection{Theoretical Frameworks of Code-Mixing and Code-Switching}
+
+Code-mixing (sometime called
+code-switching~\cite{gardner-chloros_code-switching_2009}), is often described
+as taking two forms~\cite{thara_code-mixing_2018,
+berk-seligson_linguistic_1986}:
+\begin{itemize}
+    \item \textbf{Inter-Sentential Switching}: Switching that takes place at the boundaries or in between sentences (e.g., Hindi-English: Kaise ho? I hope all is well.)
+    \item \textbf{Intra-Sentential Switching}: Switching that takes place within a sentence through the addition of words or phrases within another language. (e.g., Telugu-English: Ame movie theater velthundhi.)
+\end{itemize}
+In particular, \textit{inter-sentential} code-mixing is often correlated with a
+high-degree of bilingualism among the speaker~\cite{heller_8_1988,
+pfaff_constraints_1979, zentella_integrating_1990}
+%-- something that is not
+%necessarily true of \textit{intra-sentential}
+%code-mixing~\cite{} -- 
+and therefore is likely to be seen in areas that include a high level of
+linguistic diversity. \citet{berk-seligson_linguistic_1986} summarized -- primarily relying on the work of \citet{pfaff_constraints_1979} and \citet{poplack_sometimes_1980} -- variety
+of constraints that, though not always adhered to in practice, do help to
+characterize the ways in which code-mixing occurs.
+\begin{enumerate}
+    \item \textbf{Equivalence of Structure Constraint:} Code-mixing tends to
+    occur in places where the mixed elements do not violate the syntax rules of
+    either language i.e., areas where there is a one-to-one mapping in terms of
+    overlapping structure. For example, in Hinglish, ``Mujhe pata [I know] she
+    is coming late''.
+    \item \textbf{Size-of-Constituent Constraint:} Higher-level constituents
+    such as sentences and clauses are often swapped in more frequently than
+    low-level constituents -- though it is worth noting the prevalence
+    of this constraint this does differ significantly by language. 
+    \item \textbf{Free Morpheme Constraint:} Code mixing is often restricted
+    between a free morpheme (i.e., a standalone word that cannot be broken down
+    further like dog) and a bound morpheme (i.e., elements of words that cannot
+    stand on their own such as the -s in "dogs"). For example, under this
+    constraint, it would be considered unlikely that an English word would
+    receive a Telugu suffix unless the free morpheme has been borrowed e.g.,
+    Tenglish: ``officeki'' -> English: ``to the office''.
+\end{enumerate}
+
+Within the context of intra-sentential code-mixing, there are a variety of ways in which code-mixing can emerge. Borrowing from work done by \citet{berk-seligson_linguistic_1986}, \citet{yong_prompting_2023} define four levels of code mixing: 1) no code mixing, 2) loanwords, 3) topic related nouns, 4) linguistic elements -- often in the form of phrases -- that extended beyond the previous two categories.
+
+
+
+\subsection{Translanguaging}
+
+
+
+

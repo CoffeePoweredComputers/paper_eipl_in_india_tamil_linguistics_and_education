@@ -1,46 +1,65 @@
-\citet{bhattacharyya2019indic} characterized the challenges of NLP in Indic
+% LLMs are here and we need to prepare novice programmers for it
+With the emergence of large language models we have seen the emergence of tools
+that enable Human-GenAI collaborative coding such as GitHub
+Copilot~\footnote{github.com/features/copilot}, Amazon Q
+Developer~\footnote{aws.amazon.com/q/developer/},
+Tabnine~\footnote{tabnine.com}, and Hugging Face's code
+assistants~\footnote{huggingface.co} to name only a few. With these tools many
+in the area of computing education have begun to reevaluate the skills that
+should be taught within an introductory computing course and emphasized
+throughout undergraduate computing curriculum~\cite{prather_beyond_2024}.
+
+% skills and the new found emphasis on comprehension and prompting
+Historically, introductory computing courses have primarily emphasized the skill
+of writing code, as—long ago, in a text editor far, far away—all code was
+generated was almost exclusively by humans. Exceptions to this include early
+work on ``natural language programming'' and program synthesizes~\cite{},
+however these approaches were limited and there effectiveness and thus never saw
+widespread adoption.
+However, with the rapid adoption of
+GenAI-powered coding assistants like GitHub Copilot and ChatGPT, it is
+increasingly likely that most code will be at least partially generated with the
+help of these tools. In this new era, the ability to effectively prompt these
+models to produce desired outputs and to comprehend those outputs to ensure
+their suitability may become even more essential.
+
+
+
+% Challenges of indic language computing
+\citet{bhattacharyya_indic_2019} characterized the challenges of NLP in Indic
 languages as,
-\begin{enumerate} \item \textbf{Scale and Diversity}
-  Indic languages encompass a vast array of languages and dialects, belonging to multiple linguistic families and written in numerous distinct scripts.
-  \item \textbf{Longer Utterances}
-    Sentences in Indic languages are often longer and more complex than in English, complicating tasks like parsing and speech recognition.
-  \item \textbf{Code Mixing}
-    The frequent mixing of multiple languages in a single sentence or conversation is a common challenge in computational linguistics for the region.
-  \item \textbf{Resource Scarcity}
-    Many Indic languages lack sufficient annotated datasets for building robust NLP and speech tools.
-  \item \textbf{Absence of basic speech and NLP tools}
-    Foundational tools like morphology analyzers and speech recognition systems are either unavailable or lack accuracy for most Indic languages.
-  \item \textbf{Absence of linguistics knowledge}
-    A limited understanding of the linguistic structure of many regional languages hinders the development of computational models.
-  \item \textbf{Script complexity and non-standard input mechanisms}
-    The diversity of scripts and their associated vowel and consonant combinations make input systems slower and less intuitive.
-  \item \textbf{Non-standard transliteration}
-    Roman transliteration of Indic languages lacks standardization, leading to multiple ways of representing the same word.
-  \item \textbf{Non-standard storage}
-    Variations in how characters are encoded and stored pose issues in data sharing and tool interoperability.
-  \item \textbf{Man-made Problems}
-    Government-imposed standard keyboards and inadequate funding often stifle innovation and efficiency in linguistic computing.
-  \item \textbf{Some challenging language phenomena}
-    Features like free word order, agglutination, and context-dependent pronunciation introduce additional computational hurdles.
-\end{enumerate}
-
-
-
-
-
-In \citet{jordan2024need}, they found that amoung the languages under their
-consideration, English, Spanish, Vietnamese, and Tamil, the worst performing
-language was Tamil, generating incorrect solutions and non-sensiable
-translations. Though the authors did not systematically investigate the the
-nature of the poor performance or methods of improvement, they did note several
-possible reasons:
 \begin{enumerate}
-  \item 
-  \item Compared to English and Spanish it was likely a lower resourced language
-    in the training data.
+    \item \textbf{Scale and Diversity}: Indic languages include many languages and scripts, spanning various linguistic families.
+    \item \textbf{Longer Utterances}: Indic sentences are often longer and more complex than English, making tasks like parsing harder.
+    \item \textbf{Code Mixing}: Mixing multiple languages in the same sentence is a common challenge.
+    \item \textbf{Resource Scarcity}: Many Indic languages lack sufficient annotated datasets for NLP and speech tools.
+    \item \textbf{Lack of Basic Tools}: Foundational tools like speech recognition and morphology analyzers are either missing or inaccurate.
+    \item \textbf{Limited Linguistic Knowledge}: Poor understanding of many regional languages hampers computational model development.
+    \item \textbf{Script Complexity}: Diverse scripts and input methods make typing slower and less intuitive.
+    \item \textbf{Non-Standard Transliteration}: Inconsistent Roman transliteration causes variability in word representation.
+    \item \textbf{Non-Standard Storage}: Inconsistent encoding and storage complicate data sharing and interoperability.
+    \item \textbf{Policy Issues}: Government-imposed keyboards and underfunding hinder innovation.
+    \item \textbf{Language Challenges}: Features like free word order, agglutination, and context-dependent pronunciation add complexity.
 \end{enumerate}
-The first of these two possibilities is, perhaps, the most interesting. In
-Tamil, there are two core dialects which differ significantly: literary Tamil
-(sen-Tamil) and colloquial (kodun-Tamil)~\cite{}. Additionally, given Tamil is
-spoken not just in and around Tamil Nadu, but also in Sri Lanka, Malaysia, and
-Singapore, there are a number of regional dialects~\cite{}. 
+
+
+
+
+% difficulties of Tamil in particular and the questions we ask to address these gaps.
+
+%In \citet{jordan_need_2024}, they found that among the languages under their
+%consideration, English, Spanish, Vietnamese, and Tamil, the worst performing
+%language was Tamil, generating incorrect solutions and non-sensiable
+%translations. Though the authors did not systematically investigate the the
+%nature of the poor performance or methods of improvement, they did note several
+%possible reasons:
+%\begin{enumerate}
+%  \item 
+%  \item Compared to English and Spanish it was likely a lower resourced language
+%    in the training data.
+%\end{enumerate}
+%The first of these two possibilities is, perhaps, the most interesting. In
+%Tamil, there are two core dialects which differ significantly: literary Tamil
+%(sen-Tamil) and colloquial (kodun-Tamil)~\cite{}. Additionally, given Tamil is
+%spoken not just in and around Tamil Nadu, but also in Sri Lanka, Malaysia, and
+%Singapore, there are a number of regional dialects~\cite{}. 

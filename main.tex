@@ -22,6 +22,7 @@
 \pgfplotsset{compat=1.18}
 \usetikzlibrary{patterns}
 
+
 \definecolor{good}{rgb}{0.267004, 0.004874, 0.329415}   % Dark purple
 \definecolor{okay}{rgb}{0.190631, 0.407061, 0.556089}   % Blue-green
 \definecolor{notgood}{rgb}{0.368627, 0.788888, 0.482758} % Yellow-green
@@ -40,7 +41,7 @@
 
 \begin{document}
 
-\title[]{}
+\title[Lost in Tanglation]{Lost in Tanglation: Exploring Expert-Novice Translanguaging Practices in Natural Language Programming Activities}
 
 
 %%
@@ -50,58 +51,119 @@
 %% "authornote" and "authornotemark" commands
 %% used to denote shared contribution to the research.
 
-\author{Anon Author}
+\author{Anon Author 1}
 \orcid{}
 \affiliation{
-  \institution{University of Anon}
-  \city{Anonville}
+  \institution{Anon Institution}
+  \city{Anonville, Anon}
   \country{Rep. of Anon}
 }
-\email{anon@anonuni.edu}
+\email{anon@uofanon.edu}
 
-\author{Anon Author}
+\author{Anon Author 2}
 \orcid{}
 \affiliation{
-  \institution{University of Anon}
-  \city{Anonville}
+  \institution{Anon Institution}
+  \city{Anonville, Anon}
   \country{Rep. of Anon}
 }
-\email{anon@anonuni.edu}
+\email{anon@uofanon.edu}
 
-\author{Anon Author}
+\author{Anon Author 3}
 \orcid{}
 \affiliation{
-  \institution{University of Anon}
-  \city{Anonville}
+  \institution{Anon Institution}
+  \city{Anonville, Anon}
   \country{Rep. of Anon}
 }
-\email{anon@anonuni.edu}
+\email{anon@uofanon.edu}
 
-\author{Anon Author}
+\author{Anon Author 4}
 \orcid{}
 \affiliation{
-  \institution{University of Anon}
-  \city{Anonville}
+  \institution{Anon Institution}
+  \city{Anonville, Anon}
   \country{Rep. of Anon}
 }
-\email{anon@anonuni.edu}
+\email{anon@uofanon.edu}
+
+\author{Anon Author 5}
+\orcid{}
+\affiliation{
+  \institution{Anon Institution}
+  \city{Anonville, Anon}
+  \country{Rep. of Anon}
+}
+\email{anon@uofanon.edu}
 
 
-%\renewcommand{\shortauthors}{Anon Author, et al.}
+%\author{David H. Smith IV}
+%\authornote{These authors contributed equally to the work.}
+%\orcid{}
+%\affiliation{
+%  \institution{Virginia Tech}
+%  \city{Blacksburg, VA}
+%  \country{USA}
+%}
+%\email{dhsmith4@vt.edu}
+%
+%\author{Sruti S. Ragavan}
+%\authornotemark[1]
+%\orcid{}
+%\affiliation{
+%  \institution{IIT Kanpur}
+%  \city{Kanpur, Uttar Pradesh}
+%  \country{India}
+%}
+%\email{anon@anonuni.edu}
+%
+%\author{Viraj Kumar}
+%\orcid{}
+%\affiliation{
+%  \institution{Indian Institute of Science}
+%  \city{Bengaluru, Karnataka}
+%  \country{India}
+%}
+%\email{anon@anonuni.edu}
+%
+%\author{Paul Denny}
+%\orcid{}
+%\affiliation{
+%  \institution{University of Anon}
+%  \city{Anonville}
+%  \country{Rep. of Anon}
+%}
+%\email{anon@anonuni.edu}
 
-\renewcommand{\shortauthors}{}
 
+\renewcommand{\shortauthors}{Anon Author, et al.}
 
 
 \begin{abstract}
 
-    \textbf{Background:} 
-
-    \noindent\textbf{Objective:} 
-
-    \noindent\textbf{Method:} 
-
-    \noindent\textbf{Results:} 
+    \textbf{Background:} Modern Large Language Models (LLMs) enable code
+    generation from natural language but perform inconsistently across languages
+    due to variations in training data and linguistic features. Tamil often
+    underperforms compared to other languages, potentially due to differences
+    between standardized literary Tamil and less standardized colloquial Tamil,
+    as well as the impact of code-mixing with English. Understanding the
+    shortcomings of the current generation of LLMs in successfully generating code from 
+    Tamil descriptions is essential in guiding their development, fine tuning,
+    and use, particularly in educational settings.\\
+    \vspace{0.25em}\\
+    \noindent\textbf{Objective:} This study aims to investigate the differences
+    in how novices and experts articulate computational tasks in Tamil, as well
+    as to analyze the linguistic characteristics of responses that succeed or
+    fail in generating code through an LLM.\\
+    \vspace{0.25em}\\
+    \noindent\textbf{Methods:} We perform think-aloud interviews with
+    computer science instructors and novices literate in Tamil while completing
+    Explain-in-Plain-Language (EiPL) questions, where participants provide
+    prompts to generate functionally equivalent code. The recorded interviews
+    will be transcribed and analyzed using thematic coding, focusing on
+    code-mixing and the use of colloquial (kondun) versus (sen) literary Tamil.\\
+    \vspace{0.2em}\\
+    \noindent\textbf{Results:} \textcolor{red}{TBD :)}
 \end{abstract}
 
 
@@ -140,7 +202,6 @@
 
 \section{Background}
 
-
 \input{sections/02-literature}
 
 \section{Methods}
@@ -166,7 +227,7 @@
 
 \bibliographystyle{ACM-Reference-Format}
 \balance
-\bibliography{refs}
+\bibliography{references}
 
 
 \end{document}
